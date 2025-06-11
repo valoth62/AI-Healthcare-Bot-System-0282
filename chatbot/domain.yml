@@ -1,0 +1,266 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thanks
+  - question
+  - intro_unhappy
+  - get_name
+  - inform_symptoms
+  - ask_disease
+  - question_disease
+  - inform_disease
+  - intro_love
+  - intro_cute
+  - challenge
+  - cut
+  - Abrasions
+  - stings
+  - Splinter
+  - Sprains
+  - Strains
+  - Gastrointestinal_problems
+  - Skin_problems
+  - Bruises
+  - Broken_Toe
+  - Choking
+  - Wound
+  - nose_bleed
+  - Fracture
+  - CPR
+  - Drowning
+  - animal_bite
+  - snake_bite
+  - Head_Injury
+  - Poison
+
+entities:
+  - disease
+
+slots:
+  disease:
+    type: text
+    influence_conversation: True
+    mappings:
+      - type: from_entity
+        entity: disease
+
+actions:
+  - action_get_diagnosis
+  - action_disease_info
+
+responses:
+  utter_greet:
+  - text: "Hey Welcome, how can I assist you today?"
+  - text: "Hi dear!!!!, speak up with your problem"
+  - text: "Hey!! MediBot here, Know me, how can I help you"
+  - text: "Hi, What symptoms are you experiencing?"
+
+  utter_did_that_help:
+  - text: "Did you find the solution?"
+  - text: "is this helpful??"
+  - text: "Did you get the cure of your symptoms??"
+
+  utter_happy:
+  - text: "Great, carry on , tell me if you have any other problem"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Goodbye, see you soon!"
+  - text: "Come back!! Again and find your solution in MediBot"
+  - text: "Goodbye, take care!!!"
+
+  utter_thanks:
+  - text: "No issues mate, We are here to help."
+  - text: "Feel free to say any problem, ready to help always."
+
+  utter_iamabot:
+  - text: "I am MediBot, How can i help you ?"
+
+  utter_name:
+  - text: "Hey dear, MediBot is Here, Made by the team 'One Raw' , Always for your service in healthcare"
+  - text: "Hey, MediBot is Here, Made by the team 'One Raw' , say your symptoms I will try my best to help you out."
+  - text: "Hey 😉, MediBot is Here, Made by the team 'One Raw' , tell me your symptoms, I will Help you out!!!"
+
+  utter_deny:
+  - text: "Can your repeat your problem, I will try to find the best solution again"
+  - text: "Sorry!!! for the inconvenience caused, please tell me your problem again."
+
+  utter_unhappy:
+  - text: "Don't worry tell me your symptoms, I will find the solution."
+  - text: "Don't lose hope, MediBot is ready for your service"
+
+  utter_bot:
+  - text: "I am a Healthcare Chatbot developed by team 'One Raw', Always for your service, how can I help you."
+  - text: "I am MediBot, Your virtual healthcare bot, How can I help you out."
+
+  utter_challenge:
+  - text: "Sorry, if I have said somthing wrong, I only can help you at the healthcare support."
+  - text: "Extreamly sorry if I said anything wrong, I only can give you the suggestion, for further treatment you have to consult any doctor."
+
+  utter_love:
+  - text: "Thanks for your sweet words, but I have not that time to give you time, there are so many ill persons whom I need to cure."
+  - text: "thanks mate, so many thanks for your sweet words, it motivate me a lot."
+
+  utter_happy2:
+  - text: "Tell me the disease on which you wanna know the information"
+  - text: "Tell me your disease"
+
+  utter_deny2:
+  - text: "Okay Come Back, when the problem occures"
+  - text: "Okay, no issues, go on"
+
+  utter_deny3:
+  - text: "can you tell me your disease again with proper spelling"
+  - text: "Sorry!!! for the inconvenience caused, please tell me your disease again."
+
+  utter_ask_disease:
+  - text: "Sure! Please provide the name of the disease you want information about."
+  - text: "of course!!, Tell me the name of the disease"
+  - text: "Sure, tell me the disease name"
+
+  utter_ask_more_info:
+  - text: "Did you get the information you were looking for? Is there anything else I can assist you with?"
+
+
+
+
+  utter_no_info:
+  - text: "I'm sorry, I couldn't find information about that disease. Please try a different disease or use the correct spelling."
+  - text: "Really Sorry, I fail to find the information, please use other disease."
+
+  utter_happy3:
+  - text: "Great, carry on!, tell me if you have any other problem. For your information now you can know the PRECAUTIONS ABOUT THE DISEASE,
+                                                 INFORMATION ABOUT THE DISEASE & YOUR NEAREST HOSPITALS INFO."
+
+
+  utter_cut:
+  - text: "First, clean the cut thoroughly to prevent infection, then apply pressure for 1-2 minutes until the bleeding stops. Next, gently apply Petroleum Jelly to keep the wound moist for faster healing. Finally, cover the cut with a sterile bandage. If you're experiencing discomfort,
+   you can also consider using pain relievers such as acetaminophen."
+
+  utter_Abrasions:
+  - text: "Start by ensuring your hands are clean. Gently cleanse the area using cool to lukewarm water and a mild soap. If there are any foreign particles, carefully remove them with sanitized tweezers. For minor scrapes that aren't bleeding, it's fine to leave the wound uncovered. If there's bleeding, apply gentle pressure with a clean cloth or bandage until it stops. Once bleeding has ceased, cover the area with a thin layer of topical antibiotic ointment, such as Bacitracin, or a sterile moisture barrier ointment like Aquaphor, and then use a clean bandage or gauze. Remember to cleanse the wound and change the ointment and bandage daily. Keep an eye on the area for any signs of infection, such as pain, redness, or swelling,
+   and consult your doctor if you suspect an infection."
+
+
+  utter_stings:
+  - text: "Begin by removing any stingers promptly. Some experts suggest using a credit card to scrape out the stinger. To alleviate discomfort, applying ice to the site can offer mild relief. Apply ice for 20 minutes once every hour as necessary, but remember to wrap the ice in a towel or place a cloth between the ice and skin to prevent freezing. Taking an antihistamine such as diphenhydramine (Benadryl) or a non-sedating one like loratadine (Claritin) can help alleviate itching and swelling. For pain relief, you can take acetaminophen (Tylenol) or ibuprofen (Motrin) as needed. Afterward, wash the sting site with soap and water. Additionally,
+   applying hydrocortisone cream to the sting can help alleviate redness, itching, and swelling."
+
+  utter_Splinter:
+  - text: "1. SOAK IN EPSOM SALTS: Dissolve a cup of Epsom salts into a warm bath and soak the affected area. Alternatively, you can apply some of the salts onto a bandage pad and cover the splinter for a day; this method can help bring the splinter to the surface.
+2. VINEGAR OR OIL: Another effective method is to soak the affected area in oil (such as olive or corn) or white vinegar. Simply pour some into a bowl and soak the area for approximately 20 to 30 minutes."
+
+  utter_Sprains:
+  - text: "Use an ice pack or ice slush bath immediately for 15 to 20 minutes and repeat every two to three hours while you're awake.
+     To help stop swelling, compress the ankle with an elastic bandage until the swelling stops.
+      In most cases, pain relievers — such as ibuprofen (Advil, Motrin IB, others) or naproxen sodium (Aleve, others) or acetaminophen (Tylenol, others) are enough to manage the pain of a sprained ankle."
+
+  utter_Strains:
+  - text: "Rest,Ice,Compression and Elevation can be used to cure strains. Avoid using your muscle for a few days,
+         especially if movement causes an increase in pain and also Apply ice immediately after injuring your muscle.
+          This will minimize swelling. Don’t put ice directly on your skin. Use an ice pack or wrap ice in a towel. 
+        To reduce swelling, wrap the affected area with an elastic bandage until swelling comes down."
+
+  utter_Gastrointestinal_problems:
+  - text: "1) Replenish body fluids 2)Do not take antidiarrheal drugs or laxatives or pain medication, 
+  unless specified by a medical professional.3)Taking antacids may help, per recommendation of a healthcare professional. 
+  4)If prone to frequent heartburns, seek medical help. 5)Taking meals that are not spicy regularly, can relieve ulcer pains.
+   6)Seek medical help,
+   if conditions persist or continue to worsen"
+
+  utter_Skin_problems:
+  - text: "1)Hydrocortisone cream. 2)Ointments like calamine lotion. 3)Antihistamines. 
+  4)Cold compresses. 5)Oatmeal baths. 6)Talk to your doctor about what's best for your specific rash."
+
+  utter_Bruises:
+  - text: "1)Ice the bruise with an ice pack wrapped in a towel. 2)Leave it in place for 10 to 20 minutes. 
+  3)Repeat several times a day for a day or two as needed. 
+  4)Compress the bruised area if it is swelling, using an elastic bandage. "
+
+  utter_Broken_Toe:
+  - text: "1)To help decrease pain and swelling in a broken toe, elevate the foot, ice the injury, and stay off the foot.
+   2)Depending on the severity of the fracture, the toe may need to be put back into place (reduced), and some compound toe fractures may require surgery.
+  3) Most broken toes heal without complications in six weeks."
+
+  utter_Choking:
+  - text: "1)Encourage them to keep coughing to try to clear the blockage. 2)Ask them to try to spit out the object if it's in their mouth. 
+  3)If coughing doesn't work, start back blows and Abdonominal thrusts"
+
+  utter_Wound:
+  - text: "1)Rinse the cut or wound with water and apply pressure with sterile gauze, a bandage, or a clean cloth.
+   2)If blood soaks through the bandage, place another bandage on top of the first and keep applying pressure. 
+   3)Raise the injured body part to slow bleeding. 4)When bleeding stops, cover the wound with a new, clean bandage."
+
+  utter_nose_bleed:
+  - text: "Gently blow your nose to clear any blood clots.
+         Spray a nasal decongestant such as oxymetazoline in both nostrils, if available.
+         Pinch the soft part of your nose below the bridge for 10 minutes non-stop, and lean slightly forward.
+         Breathe through your mouth and spit out any blood that enters your mouth.
+         Once the bleeding has stopped, do not touch or blow your nose again."
+
+  utter_Fracture:
+  - text: "1)Stop any bleeding. Apply pressure to the wound with a sterile bandage,
+    a clean cloth or a clean piece of clothing. 2)Immobilize the injured area.
+    Don't try to realign the bone or push a bone that's sticking out back in.
+     If you've been trained in how to splint and professional help isn't readily available,
+      apply a splint to the area above and below the fracture sites. Padding the splints can help reduce discomfort.
+       3)Apply ice packs to limit swelling and help relieve pain. Don't apply ice directly to the skin.
+        Wrap the ice in a towel, piece of cloth or some other material. 4)Treat for shock.
+         If the person feels faint or is breathing in short, rapid breaths, lay the person down with the head slightly lower than the trunk and, 
+       if possible, elevate the legs."
+
+  utter_CPR:
+  - text: "1)For an adult or child, place the heel of one hand on the center of the chest at the nipple line.
+   You can also push with one hand on top of the other. For an infant, place two fingers on the breastbone.
+    2)For an adult or child, press down at least 2 inches. Make sure not to press on ribs. For an infant, 
+    press down about 1 and 1/2 inches. Make sure not to press on the end of the breastbone. 3)Do chest compressions only,
+     at the rate of 100-120 per minute or more.
+   Let the chest rise completely between pushes. 4)Check to see if the person has started breathing."
+
+  utter_Drowning:
+  - text: "1)Place your ear next to the person's mouth and nose. Do you feel air on your cheek? 
+  2)Look to see if the person's chest is moving.If the Person is Not Breathing, Check Pulse.
+   3)Check the person's pulse for 10 seconds.If There is No Pulse, Start CPR."
+
+
+  utter_animal_bite:
+  - text: "1)Wash the wound with soap and warm water.
+   2)Gently press a clean cloth over the wound to stop the flow of blood. 
+   3)Apply an antibacterial ointment to the wound. 4)Cover with a sterile bandage. 5)Watch for signs of infection.
+   6)Seek help if you suspect infection or possible exposure to rabies, or if "
+
+  utter_snake_bite:
+  - text: "While waiting for medical help: 1)Move the person beyond striking distance of the snake. 
+  2)Have the person lie down with wound below the heart. 3)Keep the person calm and at rest,
+   remaining as still as possible to keep venom from spreading. 
+   4)Cover the wound with loose, sterile bandage. 5)Remove any jewelry from the area that was bitten. 
+  6)Remove shoes if the leg or foot was bitten."
+
+  utter_Head_Injury:
+  - text: "Stabilize the head and neck by placing your hands on both sides of the person's head. Keep the head in line with the spine and prevent movement.
+        Wait for medical help.
+          Stop any bleeding by firmly pressing a clean cloth on the wound. If the injury is serious, be careful not to move the person's head.
+          Call 911 for any serious head injury.
+          Do not move an unconscious child. If a child is not breathing, do CPR, if you know how, while you wait for help.
+           Call the doctor right away if an infant has a head injury or a child of any age has neck pain or won't stop crying after a head injury.
+          Let the child sleep if they're tired."
+
+  utter_Poison:
+  - text: "Swallowed poison. Remove anything remaining in the person's mouth. If the suspected poison is a household cleaner or other chemical, read the container's label and follow instructions for accidental poisoning.
+Poison on the skin. Remove any contaminated clothing using gloves. Rinse the skin for 15 to 20 minutes in a shower or with a hose.
+Poison in the eye. Gently flush the eye with cool or lukewarm water for 20 minutes or until help arrives.
+Inhaled poison. Get the person into fresh air as soon as possible.
+If the person vomits, turn his or her head to the side to prevent choking.
+Begin CPR if the person shows no signs of life, such as moving, breathing or coughing.
+call 911 fast "
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

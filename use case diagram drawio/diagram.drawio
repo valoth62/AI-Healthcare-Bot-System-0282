@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net" modified="2024-02-11T17:53:42.544Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="TXdBfO27QFBAAGkGsFme" version="23.1.2" type="device">
+  <diagram name="Page-1" id="f68C1mmCggHZu1qUMTr7">
+    <mxGraphModel dx="1908" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="20" width="600" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-5" value="&lt;b&gt;User Requests Hospital Guidance&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="215" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-6" value="Patient" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="210" width="90" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FN6IpsGWX9z0rx6V2FKb-8" target="FN6IpsGWX9z0rx6V2FKb-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-8" value="chatbot" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="730" y="210" width="100" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-9" value="&lt;b&gt;&amp;nbsp;Request&amp;nbsp; his Location&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="210" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-13" value="&lt;b&gt;Chatbot Retrieves Hospital Data&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="320" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-15" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="270" y="430" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-16" value="&lt;b&gt;Haspitals Databsase&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="490" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-18" value="&lt;b&gt;User Provides Location&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.457;exitY=1.033;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.727;entryY=0.023;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FN6IpsGWX9z0rx6V2FKb-9" target="FN6IpsGWX9z0rx6V2FKb-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.986;exitY=0.588;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.598;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FN6IpsGWX9z0rx6V2FKb-5" target="FN6IpsGWX9z0rx6V2FKb-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.033;exitY=0.742;exitDx=0;exitDy=0;entryX=1.02;entryY=0.414;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="FN6IpsGWX9z0rx6V2FKb-18" target="FN6IpsGWX9z0rx6V2FKb-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FN6IpsGWX9z0rx6V2FKb-13" target="FN6IpsGWX9z0rx6V2FKb-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="350" as="sourcePoint" />
+            <mxPoint x="450" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-28" value="&lt;b&gt;Chatbot Provides Hospital Information&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="570" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1.047;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FN6IpsGWX9z0rx6V2FKb-16" target="FN6IpsGWX9z0rx6V2FKb-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="370" as="sourcePoint" />
+            <mxPoint x="450" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-30" value="&lt;b&gt;User Receives Guidance&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="570" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FN6IpsGWX9z0rx6V2FKb-28" target="FN6IpsGWX9z0rx6V2FKb-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="600" as="sourcePoint" />
+            <mxPoint x="450" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.542;exitY=0.583;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FN6IpsGWX9z0rx6V2FKb-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="380" as="sourcePoint" />
+            <mxPoint x="180" y="75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.618;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FN6IpsGWX9z0rx6V2FKb-8" target="FN6IpsGWX9z0rx6V2FKb-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="340" as="sourcePoint" />
+            <mxPoint x="450" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-37" value="&lt;b&gt;patient Provides Symptoms&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="40" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-38" value="&lt;b&gt;User Requests Hospital Information&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="35" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-40" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FN6IpsGWX9z0rx6V2FKb-37" target="FN6IpsGWX9z0rx6V2FKb-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="340" as="sourcePoint" />
+            <mxPoint x="450" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FN6IpsGWX9z0rx6V2FKb-42" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="340" as="sourcePoint" />
+            <mxPoint x="450" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

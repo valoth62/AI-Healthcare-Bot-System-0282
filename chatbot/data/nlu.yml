@@ -1,0 +1,431 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hola
+    -hey there
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    -talk to you later
+    - 👋👋
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - You are right
+    - Yeah
+    - Yup
+    - Yupp
+    - it helps
+    - okay
+    - okk
+    - it's helpful
+    - it's helped a lot mate
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - Nope
+    - Np
+    - it doesn't help
+    - it is not which I am wanting
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - I enjoy a lot
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - I am frustrated
+    - suffering
+    - too weak
+    - Am I so bad?
+    - I wanna cry
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - Are you a bot or human?
+    - You are like human
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thanks a lot
+    - Appreciate your help
+    - Thanks Risa
+    - Thanks mate
+
+- intent: question
+  examples: |
+    - who are you?
+    - whom am I taking with?
+
+- intent: intro_unhappy
+  examples: |
+    - You are wrong
+    - Not at all
+    - You are bad
+    - You are too bad
+    - How bad you are
+    - You are too rude
+    - You are rude
+
+- intent: intro_love
+  examples: |
+    - I love you
+    - Love you
+    - 🥰
+    - 😘
+    - 💋
+    - 💗
+    - ❤️
+    - Wanna kiss you
+    - Kiss you
+    - You are my love
+    - You are good
+    - YAG
+    - yag
+    - Yag
+
+- intent: intro_cute
+  examples: |
+    - You are cute
+    - You are so cute
+    - You are too cute
+    - My cutey
+    - Hey Cutey
+    - I are sooooooo cute
+    - So nice of you
+    - You are too nice
+    - You are beautiful
+    - You are so beutiful
+
+- intent: challenge
+  examples: |
+    - who hell are you?
+    - How you get the right to say like this?
+    - Who give you the odacity to say like this?
+    - Who are you man?
+    - Who are you babe?
+
+- intent: get_name
+  examples: |
+    - My name is [Ritwik](name)
+    - I'm [Ritwik](name)
+    - You can call me [Ritwik](name)
+
+- intent: inform_symptoms
+  examples: |
+    - I have headache
+    - My throat is sour
+    - I have constipation
+    - I feel tired
+    - I feel breathing problem
+    - I have nossy nose
+    - i have a headache
+    - my throat is sore
+    - i feel tired
+    - i have a fever
+    - my leg hurts
+    - I'm experiencing vomiting
+    - I have a high body temperature
+    - My back is aching
+    - I feel nauseous
+    - My eyes are watery
+    - My nose is running
+    - I have a cough
+    - I'm feeling weak
+    - My stomach hurts
+    - I have chills
+    - I'm having difficulty breathing
+    - My joints are painful
+    - I have a rash
+    - I feel dizzy
+
+- intent: ask_disease
+  examples: |
+    - I have one disease to ask
+    - Tell me about one disease
+    - I want to know the info about a disease
+    - I wanna know about one disease
+    - can you tell me about a disease
+
+- intent: question_disease
+  examples: |
+    - Tell me something about [Fever](disease)
+    - I want to know about [caugh](disease)
+    - What is [Fungal infection](disease)
+    - want to gain the knowledge of [Acne](disease)
+    - will you speak about [Heart attack](disease)
+    
+
+- intent: inform_disease
+  examples: |
+    - [Fever](disease)
+    - [caugh](disease)
+    - [Fungal infection](disease)
+    - [Acne](disease)
+    - [Heart attack](disease)
+
+- intent: cut
+  examples: |
+    - What to do if Cuts?
+    - How to cure Cuts?
+    - Which medicine to apply for Cuts?
+    - what to apply on cuts?
+    - Cut
+
+- intent: Abrasions
+  examples: |
+    - how do you treat abrasions?
+    - Do Abrasions cause scars?
+    - Abrasions
+    - what to do if abrasions?
+    - Which medicine to apply for abrasions?
+    - How to cure abrasions ?
+
+- intent: stings
+  examples: |
+    - How do you treat Sting?
+    - Stings
+    - What to do if you get a sting?
+    - Which medicine to apply if sting?
+
+- intent: Splinter
+  examples: |
+    - How to remove Splinters
+    - How to cure Splinters?
+    - What to do if I have splinters?
+    - How do you bring a splinter to the surface?
+
+- intent: Sprains
+  examples: |
+    - How do you treat a sprain?
+    - what to do if i get a sprain?
+    - Which cream to apply if i get a sprain?
+    - Which medicine to apply if I get a sprain?
+
+- intent: Strains
+  examples: |
+    - How do you treat a strain?
+    - what to do if i get a strain?
+    - Which cream to apply if i get a strain?
+    - Which medicine to apply if I get a strain?
+    - How do you diagnose a strain? 
+    -Is heat or ice better for a pulled muscle?
+
+- intent: Gastrointestinal_problems
+  examples: |
+    - How do you treat gas problems?
+    - what to do if i have Gastrointestinal problems?
+    - Which medicine to take if I get gas problem?
+    - How to cure Gas problems?
+
+- intent: Skin_problems
+  examples: |
+    - How do you treat Skin problems?
+    - what to do if i get a skin allergy?
+    - Which medicine to take if I get skin allergy?
+    - How to cure skin allergy?
+
+- intent: Bruises
+  examples: |
+    - How do you treat Bruises?
+    - what to do if i get a Bruise?
+    - Which medicine to take if I get a Bruise?
+    - How to cure Bruises? 
+
+- intent: Broken_Toe
+  examples: |
+    - How do you treat a Broken Toe?
+    - what to do if i get a Broken Toe?
+    - Which medicine to take if I get a Broken Toe?
+    - How to cure Broken Toe? 
+
+- intent: Choking
+  examples: |
+    - How do you treat Choking?
+    - what to do if i get a Choke?
+    - Which medicine to take if I get Choked?
+    - How to cure Choking?
+    
+    
+
+- intent: Wound
+  examples: |
+    - How do you treat a wound?
+    - what to do if i get a Wound?
+    - Which medicine to take if I get wounded?
+    - How to cure a wound?
+
+
+- intent: nose_bleed
+  examples: |
+    - How do you treat a bleeding nose?
+    - what to do if i my nose is bleeding?
+    - Which medicine to take if I get nose bleed?
+    - How to cure nose bleeding?
+    
+- intent: Fracture
+  examples: |
+    - How do you treat a Fracture?
+    - what to do if i get a Fracture?
+    - Which medicine to take if I have a Fracture?
+    - How to cure a Fracture?
+
+- intent: CPR
+  examples: |
+    - How to give CPR??
+    - what to do in a CPR?
+    - What steps to take in a CPR??
+    - How to help a drowning person in CPR?
+
+- intent: Drowning
+  examples: |
+    - What to do if someone is Drowning?
+    - what to do if someone drowned?
+    - What steps to take if i see a drowning person?
+    - How to help a drowning person?
+
+- intent: animal_bite
+  examples: |
+    - How do you treat a animal bite?
+    - how do you treat a dog bite?
+    - what to do if i get a animal bite?
+    - How to cure dog bite?
+    - i got bit by a dog
+
+- intent: snake_bite
+  examples: |
+    - How do you treat a snake bite?
+    - how do you treat a snake bite??
+    - what to do if i get a snake bite?
+    - How to cure snake bite?
+    - i got bit by a snake
+
+- intent: Head_Injury
+  examples: |
+    - How do you treat a head Injury?
+    - what to do if i get a Head Injury?
+    - Which medicine to take if I get injured in the head?
+    - How to cure Head Injury?
+
+- intent: Poison
+  examples: |
+    - How do you treat a Poison?
+    - what to do if i get Poison?
+    -Which medicine to take if I am poisoned?
+    - How to cure Poisoning?
+ 
+
+- lookup: disease
+  examples: |
+    - Fungal infection
+    - Hepatitis C
+    - Hepatitis E
+    - Alcoholic hepatitis
+    - Tuberculosis
+    - Common Cold
+    - Pneumonia
+    - Dimorphic hemmorhoids(piles)
+    - Heart attack
+    - Varicose veins
+    - Hypothyroidism
+    - Hyperthyroidism
+    - Hypoglycemia
+    - Osteoarthristis
+    - Arthritis
+    - (vertigo) Paroymsal Positional Vertigo
+    - Acne
+    - Urinary tract infection
+    - Psoriasis
+    - Hepatitis D
+    - Hepatitis B
+    - Allergy
+    - Hepatitis A
+    - GERD
+    - Chronic cholestasis
+    - Drug Reaction
+    - Peptic ulcer diseae
+    - AIDS
+    - Diabetes
+    - Gastroenteritis
+    - Bronchial Asthma
+    - Hypertension
+    - Migraine
+    - Cervical spondylosis
+    - Paralysis (brain hemorrhage)
+    - Jaundice
+    - Malaria
+    - Chicken pox
+    - Dengue
+    - Typhoid
+    - Impetigo

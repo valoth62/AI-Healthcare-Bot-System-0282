@@ -1,0 +1,293 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+  - intent: thanks
+  - action: utter_thanks
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_unhappy
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_deny
+
+- story: greet user by name
+  steps:
+  - intent: get_name
+  - action: utter_name
+  - intent: greet
+  - action: utter_greet
+
+- story: reject the bot
+  steps:
+    - intent: deny
+    - action: utter_deny
+
+- story: bot challenge 1
+  steps:
+    - intent: bot_challenge
+    - action: utter_bot
+    - intent: question
+    - action: utter_bot
+    - intent: challenge
+    - action: utter_challenge
+
+- story: bot challenge 2
+  steps:
+    - intent: intro_love
+    - action: utter_love
+    - intent: intro_cute
+    - action: utter_love
+    - intent: intro_unhappy
+    - action: utter_deny
+
+- story: precautions 1
+  steps:
+    - intent: inform_symptoms
+    - action: action_get_diagnosis
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: disease info 1
+  steps:
+    - intent: question_disease
+    - action: action_disease_info
+    - action: action_listen
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny3
+
+- story: disease info 2
+  steps:
+    - intent: inform_disease
+    - action: action_disease_info
+    - action: action_listen
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny3
+
+- story: disease ask
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_disease
+    - action: utter_ask_disease
+
+- story: thanks
+  steps:
+    - intent: thanks
+    - action: utter_thanks
+
+- story: frist aid 1
+  steps:
+    - intent: cut
+    - action: utter_cut
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 2
+  steps:
+    - intent: Abrasions
+    - action: utter_Abrasions
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 3
+  steps:
+    - intent: stings
+    - action: utter_stings
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 4
+  steps:
+    - intent: Splinter
+    - action: utter_Splinter
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 4
+  steps:
+    - intent: Sprains
+    - action: utter_Sprains
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 5
+  steps:
+    - intent: Strains
+    - action: utter_Strains
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 6
+  steps:
+    - intent: Gastrointestinal_problems
+    - action: utter_Gastrointestinal_problems
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 7
+  steps:
+    - intent: Skin_problems
+    - action: utter_Skin_problems
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 8
+  steps:
+    - intent: Bruises
+    - action: utter_Bruises
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 9
+  steps:
+    - intent: Broken_Toe
+    - action: utter_Broken_Toe
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 10
+  steps:
+    - intent: Choking
+    - action: utter_Choking
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 11
+  steps:
+    - intent: Wound
+    - action: utter_Wound
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 12
+  steps:
+    - intent: nose_bleed
+    - action: utter_nose_bleed
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 13
+  steps:
+    - intent: Fracture
+    - action: utter_Fracture
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 14
+  steps:
+    - intent: CPR
+    - action: utter_CPR
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 15
+  steps:
+    - intent: Drowning
+    - action: utter_Drowning
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 16
+  steps:
+    - intent: animal_bite
+    - action: utter_animal_bite
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 17
+  steps:
+    - intent: snake_bite
+    - action: utter_snake_bite
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 18
+  steps:
+    - intent: Head_Injury
+    - action: utter_Head_Injury
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: frist aid 19
+  steps:
+    - intent: Poison
+    - action: utter_Poison
+    - intent: affirm
+    - action: utter_happy3
+    - intent: deny
+    - action: utter_deny
+
+- story: animal byte
+  steps:
+  - intent: animal_bite
+  - action : utter_animal_bite
+
+
+
